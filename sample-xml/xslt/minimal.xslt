@@ -1,3 +1,12 @@
+<!--
+TR-UBL compliant minimal invoice XSLT
+Author: Raitonn
+Focus:
+- GIB validation friendly
+- Outlook/Gmail safe HTML
+-->
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">

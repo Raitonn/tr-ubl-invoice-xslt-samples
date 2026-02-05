@@ -24,3 +24,23 @@ Focus:
   </xsl:template>
 
 </xsl:stylesheet>
+
+
+
+Gib'in Son Regulasyonunun Bir Kısmı:
+
+<xsl:if test="//n1:Invoice/cbc:ProfileID = 'YATIRIMTESVIK'">
+									<td class="lineTableTd" style="width:10.6%" align="center">
+										<span style="font-weight:bold;">
+											<xsl:text>Harcama Tipi</xsl:text>
+										</span>
+									</td>
+									<xsl:if test="count(//n1:Invoice/cac:InvoiceLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode[normalize-space(.) = '01']) > 0">
+										<td class="lineTableTd" style="width:10.6%" align="center">
+											<span style="font-weight:bold;">
+												<xsl:text>Makine Adı</xsl:text>
+											</span>
+										</td>
+									 
+									</xsl:if>
+								</xsl:if>
